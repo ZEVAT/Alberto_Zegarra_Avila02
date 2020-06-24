@@ -1,0 +1,50 @@
+Algoritmo Ejercicio_propuesto41
+	definir carrera Como Entero
+	definir promedio, descuento Como Real
+	Escribir "Indique cúal es su carrera: ingenieria(1), administracion (2) o medicina(3)"
+	leer carrera
+	Escribir "Ingrese su promedio ponderado:0<=promedio y promedio<=10(1),11<=promedio y promedio<=14(2),15<=promedio y promedio<=18(3) o  18<promedio(4)"
+	leer promedio
+	Segun carrera Hacer
+		1:
+			pagomensual<-1500
+			Segun promedio Hacer
+				1:
+					descuento<-0*pagomensual
+				2:
+					descuento<-0.05*pagomensual
+				3:
+					descuento<-0.1*pagomensual
+				4:
+					descuento<-1*pagomensual
+			Fin Segun
+		2:
+			pagomensual<-1000
+			Segun promedio Hacer
+				1:
+					descuento<-0*pagomensual
+				2:
+					descuento<-0.05*pagomensual
+				3:
+					descuento<-0.1*pagomensual
+				4:
+					descuento<-1*pagomensual
+			Fin Segun
+		3:
+			pagomensual<-2000
+			Segun promedio Hacer
+				1:
+					descuento<-0*pagomensual
+				2:
+					descuento<-0.05*pagomensual
+				3:
+					descuento<-0.1*pagomensual
+				4:
+					descuento<-1*pagomensual
+			Fin Segun
+		De Otro Modo:
+			Escribir "No contamos con esta carrera"
+	Fin Segun
+	importepagar<- pagomensual- descuento
+	Escribir "El importe a pagar por el alumno es :", importepagar
+FinAlgoritmo

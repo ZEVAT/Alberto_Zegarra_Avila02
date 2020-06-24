@@ -1,0 +1,22 @@
+Algoritmo sin_titulo
+	Definir docenas Como Entero
+	Definir descuento Como Real
+	Escribir "Ingrese el precio por docena"
+	leer precio
+	Escribir "Ingrese la cantidad de docenas que compro"
+	leer docenas
+	Si 6<docenas Entonces
+		descuento<-0.15
+	SiNo
+		descuento<-0.1
+	Fin Si
+	Si 30<docenas Entonces
+		huesos<-3*docenas/2
+	SiNo
+		huesos<-0
+	Fin Si
+	montobruto<-precio - descuento
+	Escribir "El monto bruto a pagar es :",montobruto
+	Escribir "El descuento es :", descuento
+	Escribir "La cantidad de huesos es :", huesos
+FinAlgoritmo

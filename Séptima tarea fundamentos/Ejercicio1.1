@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	Definir prestamo Como Real
+	Definir cuotas Como Entero
+	
+	Escribir "Ingrese el prestamo a solicitar"
+	leer prestamo
+	
+	Si prestamo<2000 Entonces
+		intereses<-0.12
+	SiNo
+		intereses<-0.1
+	Fin Si
+	
+	Si 2500<prestamo Entonces
+		cuotas<-3
+	FinSi
+	Si prestamo<1000 Entonces
+		cuotas<-1
+	FinSi
+	Si 1000<=prestamo y prestamo<=2500 Entonces
+		cuotas<-2
+	FinSi
+	preciocuota<- intereses*prestamo*cuotas
+Escribir "El número de cuotas es :", cuotas
+	Escribir "El valor de cada cuota es :", preciocuota
+FinAlgoritmo
